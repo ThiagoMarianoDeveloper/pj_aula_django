@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1>opa cadastrar</h1>
+
+
+<form action="/loja/cadastrar" method="post">
+    {% csrf_token %}
+
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome">
+    <br>
+    <label for="nome">Preço</label>
+    <input type="text" name="preco" id="preco">
+    <br>
+    <label for="nome">Quantidade</label>
+    <input type="text" name="quantidade" id="quantidade">
+    <br>
+
+    <input type="submit" value="Cadastrar">
+
+
+
+
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
